@@ -15,17 +15,17 @@ public class SystemApplication {
 	}
 
 
-	@Bean
-	public CommandLineRunner demo(CompanyRepository repository) {
-		return (args) -> {
-			// Salva uma companhia
-			Company company = new Company();
-			company.setName("Bradesco");
-			company.setCnpj("00.000.000/0001-XX");
-			repository.save(company);
-
-			// Listar todos as empresas
-			repository.findAll().forEach(System.out::println);
-		};
-	}
+//	@Bean
+//	public CommandLineRunner demo(CompanyRepository repository) {
+//		return (args) -> {
+//			// Salva uma companhia
+//			Company company = new Company();
+//			company.setName("Bradesco");
+//			company.setCnpj("00.000.000/0001-XX");
+//			repository.save(company);
+//
+//			// Listar todos as empresas
+//			repository.findAll().forEach(System.out::println);
+//		};
+//	}
 }
